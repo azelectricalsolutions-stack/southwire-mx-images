@@ -1,0 +1,21 @@
+Estás conectado en SiePortal de Siemens (es-mx). Necesito que reúnas las FOTOS de los productos Siemens de la línea "Electrical Products / Productos Eléctricos" y me entregues un CSV.
+
+OBJETIVO: un archivo CSV llamado siemens_images.csv con estas columnas EXACTAS:
+part_number,image_url,datasheet_url,notes
+
+Para cada producto:
+- part_number = el número de parte / MLFB de Siemens tal como aparece en el portal.
+- image_url = la URL DIRECTA de la imagen principal. Debe empezar con https:// y terminar en .jpg, .jpeg, .png o .webp. Obtenla con clic derecho sobre la imagen -> "Copiar dirección de la imagen". Usa la imagen grande, NO la miniatura. NO una captura de pantalla, NO un data:base64, NO el enlace de la página.
+- datasheet_url = (OPCIONAL) la URL del PDF de la ficha técnica en español, si está a la mano.
+- notes = cualquier observación (por ejemplo "sin imagen").
+
+CÓMO HACERLO (en este orden):
+1) PRIMERO busca una EXPORTACIÓN MASIVA. Si SiePortal permite armar una lista de productos y exportarla a Excel, o tiene una descarga de datos de producto / paquete CAx que incluya enlaces de imagen, ÚSALA: es lo más rápido. Conviértela al CSV pedido.
+2) Si no hay exportación con imágenes, recorre por categorías de Electrical Products: interruptores termomagnéticos, interruptores de caja moldeada (SENTRON / 3VA), interruptores de seguridad y desconectadores, centros de carga y tableros, bases para medidor, contactores y arrancadores (SIRIUS / 3RT), relés de sobrecarga, supresores de sobretensión (SPD), fusibles, capacitores, control y señalización, transformadores y accesorios. En cada producto copia su número de parte y la URL de su imagen principal.
+
+REGLAS:
+- Guarda siemens_images.csv en la carpeta Descargas (Downloads). Si NO puedes guardar archivos, imprime el CSV COMPLETO en el chat para copiarlo y pegarlo.
+- Trabaja por lotes y ve guardando avances. Los resultados PARCIALES sirven: entrega lo que tengas.
+- La EXACTITUD importa: la foto correcta debe ir con su número de parte correcto.
+- Toma TODOS los productos de Electrical Products que encuentres en el portal (no necesito una lista; toma lo que haya disponible).
+- Prioridad #1 = image_url. La ficha técnica es bonus.
